@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color:skyblue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(249, 45, 45, 0.8);
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / 4;
+  background-image: linear-gradient(rgb(242, 135, 135), yellow, blue);
+
+}
+.item2{
+    grid-row:2/span 3;
+    text-align: center;
+    justify-content: center; 
+    background-image: linear-gradient(rgb(253, 149, 149), yellow);   
+}
+.item3{
+    background-image: linear-gradient(rgb(243, 140, 140), yellow);
+}
+.item4{
+    background-image: linear-gradient(rgb(242, 135, 135), yellow, blue);
+}
+.item5{
+    grid-column: span 2;
+    background-image: linear-gradient(rgb(222, 119, 119), yellow);
+}
+.item6{
+    grid-column: span 3;
+    background-image: linear-gradient(rgb(235, 121, 121), yellow);
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="grid-container">
+  <div class="item1">Captain</div>
+  <div class="item2">Thor</div>
+  <div class="item3">IronMan</div>  
+  <div class="item4">Hulk</div>
+  <div class="item5">Hawkye</div>
+  <div class="item6">Natasha</div>
+ 
+
+</body>
+</html>
+
+
